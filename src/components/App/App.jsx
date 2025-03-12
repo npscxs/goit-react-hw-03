@@ -1,6 +1,6 @@
 import css from "./App.module.css";
 import ContactForm from "../ContactForm/ContactForm";
-import ContactList from "../ContactList/ContactList";
+
 import SearchBox from "../SearchBox/SearchBox";
 import { useState, useEffect } from "react";
 
@@ -28,13 +28,13 @@ function App() {
   }, [contacts]);
 
   const addUser = (newUser) => {
-    setContacts((prewUsers) => {
-      return [...prewUsers, newUser];
+    setContacts((prevUsers) => {
+      return [...prevUsers, newUser];
     });
   };
   const deleteUser = (userId) => {
-    setContacts((prewUsers) => {
-      return prewUsers.filter((user) => user.id !== userId);
+    setContacts((prevUsers) => {
+      return prevUsers.filter((user) => user.id !== userId);
     });
   };
   const visibleUser = contacts.filter((user) =>
