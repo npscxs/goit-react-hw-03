@@ -1,6 +1,6 @@
 import css from "./App.module.css";
 import ContactForm from "../ContactForm/ContactForm";
-
+import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
 import { useState, useEffect } from "react";
 
